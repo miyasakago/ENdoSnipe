@@ -413,7 +413,7 @@ public class TreeMenuService
         DatabaseManager dbMmanager = DatabaseManager.getInstance();
         String dbName = dbMmanager.getDataBaseName(1);
         // Agent名の一覧を追加する。
-        List<String> agentNameList = new ArrayList<>();
+        List<String> agentNameList = new ArrayList<String>();
         try
         {
             agentNameList = JavelinMeasurementItemDao.selectAgentNameList(dbName, parentTreeId);
